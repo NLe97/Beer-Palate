@@ -6,29 +6,120 @@
     <title>Beer Palate</title>
     <!--link to UIKit-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
-    
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="assets/homepagestyle.css"/>
+
+
 </head>
 <body>
-    <div class="container">
+    <!--Navbar Start-->
+    <div class="container-NavBar">
         <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-Left">
+            <div class="uk-navbar-left uk-background-muted">
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Beer Palate</a></li>
-                    <li class="uk-parent"><a href="#"></a></li>
-                    <li><a href=""></a></li>
+                    <li class="uk-active uk-text-muted"><a href="#">Beer Palate</a></li>
                 </ul>
             </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="nav-home"><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Favorite</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                </ul>    
+            </div> 
         </nav>
     </div>
+    <!--Navbar ends-->
+    <br>
+
+    <!--Homepage Info Panel Start-->
+    <div class="infopanel">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">
+                <a class="uk-link-reset" href="">Welcome to Beer Palate!!</a>
+                <a><img src="assets/Icons/BeerIcon.png" alt="Beer Bottle and Glass Fizzing" height="150" width="150"></a>
+            </h1>
+            
+                <p class="uk-article-meta">Written by <a href="#">Aaron Howard, Mason Morey, & Ben Le</a> on 2 May 2020. Posted in <a href="#">GitHub</a></p>
+                <p class="uk-text-lead">Hello my beer connoisseurs, are you frustrated with being stuck at home and not being able to go to the bars? Well it's time grab a brewer friend and search up the beer you like and read all about the ingredients with included brewer tips, make yourselves a homebrew and order up the suggested food pairings!!!!  </p>
+        
+            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                <div>
+                    <a class="uk-button uk-button-text" href="#">Read more</a>
+                </div>
+                <div>
+                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--Homepage Infopanel Ends-->
+
+
+    <br>
+    <!--Start of Search bar-->
+    <div class="my-searchbar">
+        <div class="container-searchbar uk-flex uk-flex-center">
+            <form>
+                <div class="uk-margin" uk-margin>
+                    <div uk-form-custom="target: true">
+                        <input class="uk-input" type="text" placeholder="Search">
+                    </div>
+                    <button class="uk-button uk-button-default">Submit</button>
+            </form>
+        </div>
+    </div>
     
+    <!--end Search bar-->
+    
+    <!--Start of Cards-->
+    <div class="my-container">
+        <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Picture</h3>
+                    <img src="">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
+                    <h3 class="uk-card-title">Card Content</h3>
+                    <p>Name: </p>
+                    <p>Description:</p>
+                    <p>Ingredients:</p>
+                    <p>Brewer Tips:</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Food to Eat With</h3>
+                    <p>Food Pairing:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Ends of cards-->
 
+<!--Footer-->
+<div class="footer">
+    <p>Footer</p>
+</div>
+<!--Footer ends-->
 
-
-
-
+<!--Link my JS-->
+<script src="assets/homepagescript.js"></script>
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
-
 </body>
 </html>

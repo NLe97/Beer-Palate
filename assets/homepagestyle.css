@@ -1,0 +1,43 @@
+.container-Navbar {
+    font-size: 40pt;
+}
+
+
+.infopanel {
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-image: url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: contain;
+    color: black;
+}
+.uk-article {
+    background-color: antiquewhite;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.my-searchbar {
+     margin-top: 10px;
+}
+
+.my-container {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+ }
