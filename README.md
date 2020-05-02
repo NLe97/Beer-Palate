@@ -19,3 +19,4 @@ When I click on beer card
 Then I can favorite it and it is saved in the favorites page as cards also
 When I am in the favorited page 
 Then I can remove or review the beer cards that I have previously favorited
+```
