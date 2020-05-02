@@ -5,7 +5,7 @@ Beer Consumer report and what foods to eat with it
 As a beer consumer/customer stuck at home and not being able to go the bars to get beer and it's accompanying foods,
 I WANT TO BE ABLE to type in the name of the beer, 
 SO THAT I can see what ingredient are in the beer(possible so I could make it if I'm a brewer) and what foods I should order delivery to eat and enjoy with my beer. 
-
+```
 ## Criteria
 ```
 User must be 21 to enter site
