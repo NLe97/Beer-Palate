@@ -29,18 +29,19 @@
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 300px;
+    
 }
 
-.footer {
-    padding: 10px;
-    clear: both;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightgray;
+footer {
     text-align: center;
-    position: fixed;
+    background-color: lightgray;
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     bottom: 0;
-    min-width: 100%;
-    color: black;
+    
 }
 
 h2 {
