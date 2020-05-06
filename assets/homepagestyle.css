@@ -2,7 +2,6 @@
     font-size: 40pt;
 }
 
-
 .infopanel {
     padding-right: 20px;
     padding-left: 30px;
@@ -12,6 +11,7 @@
     background-size: contain;
     color: black;
 }
+
 .uk-article {
     background-color: antiquewhite;
     margin-right: 20px;
@@ -19,7 +19,6 @@
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
-    
 }
 
 .my-searchbar {
@@ -33,11 +32,17 @@
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    clear: both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: lightgray;
-    color: black;
     text-align: center;
- }
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    color: black;
+}
+
+h2 {
+    color: black;
+}

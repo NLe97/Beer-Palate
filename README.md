@@ -1,4 +1,3 @@
-
 # Beer-Palate---Project-1 
 Beer Consumer report and what foods to eat with it
 ## User Story
