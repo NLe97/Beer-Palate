@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="ageCheck.css" />
+    <title>Age Verification</title>
+  </head>
+  <body>
+    <!--First Part of the Age_Check-->
+    <section>
+      <!--Start of the age verification page-->
+      <div class="container">
+        <div class="row">
+          <!--Card that all the elements will be held in-->
+          <div
+            class="uk-card uk-card-secondary uk-position-center uk-card-body uk-width-1-2@m age-ver col-sm-8"
+          >
+            <h3 class="uk-card-title">Welcome to Beer Palate!</h3>
+            <p>
+              To access this page you must be atleast 21 years old. Please hit
+              the button below to go through the age verification process
+            </p>
+
+            <!--Button for user to verify DOB -->
+            <p uk-margin>
+              <button
+                uk-toggle="target: #my-id"
+                type="button"
+                class="uk-button uk-button-primary uk-button-large submit-btn"
+              >
+                Age Verification
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second part with the Modal-->
+    <section>
+      <!--Modal-->
+      <div id="my-id" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+          <h2 class="uk-modal-title uk-text-center">Age Verification</h2>
+          <p>
+            In order to ensure no minors are viewing this page, we ask that you
+            input your birthday in the field below. If you are old enough you
+            will be granted access to the page. If you dont meet the required
+            age you will be redirected to a family friendly page.
+          </p>
+          <!--Age Input-->
+          <div class="uk-margin">
+            <input
+              class="uk-input uk-text-center uk-form-width-medium ageInput"
+              type="text"
+              placeholder="MM/DD/YYYY"
+            />
+          </div>
+          <button
+            class="uk-modal-close-default"
+            type="button"
+            uk-close
+          ></button>
+          <!--Age check button, ageCheck class will be used to target in js-->
+          <button class="uk-button uk-button-primary ageCheck" type="button">
+            Verify
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--JS links-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.4.2/js/uikit.min.js"></script>
+    <script src="ageCheck.js"></script>
+  </body>
+</html>
