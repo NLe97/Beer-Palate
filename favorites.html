@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>Favorites</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- UIkit CSS -->
@@ -9,9 +9,7 @@
         <link rel="stylesheet" href="assets/favorites.css">
         <link rel="stylesheet" href="css/uikit.min.css"/>
         <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="assets/favorites.js"></script>
+  
 
         <!-- // branches then pull request -->
         <!-- go to main files then go to compare -->
@@ -19,8 +17,24 @@
         
     </head>
     <body>
+        <div class="container-NavBar">
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left uk-background-muted">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active uk-text-muted"><a href="/index.html">Beer Palate</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="nav-home"><a href="/Homepage.html">Home</a></li>
+                        <li>
+                            <a href="/favorites.html">Favorite</a>                       
+                        </li>                
+                    </ul>    
+                </div> 
+            </nav>
+        </div>
         
-
         <header>Favorites</header>
        <h1> One thing any experienced drinker will tell you is to not loose you're head always remember the rules. Don't drink and drive and know you're limit. Please drink responsibly.</h1>
         <!-- search bar -->       
@@ -34,44 +48,39 @@
     </div>
         <!-- end search bar -->
         <!-- Favorites -->
-        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-            <div>
-                <div class="uk-card uk-card-secondary uk-flex-wrap uk-card-body">
-                       <h3 class="uk-card-title">Secondary</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                   </div>
-             </div>
-            <div>
-                <div class="uk-card uk-card-secondary uk-flex-wrap uk-card-body">
-                    <h3 class="uk-card-title">Secondary</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="my-container">
+            <div class="uk-child-width-1-3@s uk-grid-match beer-card" uk-grid>
+                <div class= "card-image">
+                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body cardpic">
+                        <h3 class="uk-card-title">Picture</h3>
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body cardbody">
+                        <h3 class="uk-card-title beer-name">Beer Name</h3>
+                        <p class="beer-info">Description:</p>
+                        <p class="beer-hop">Hops:</p>
+                        <p class="beer-ingredients">Ingredients:</p>
+                        <p class="beer-tips">Brewer Tips:</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
+                        <h3 class="uk-card-title">Food to Eat With</h3>
+                        <p class="beer-pairing">Food Pairing:</p>
+                        <button class="uk-button uk-button-default btn-favorite">Remove Favorite</button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-card uk-card-secondary uk-flex-wrap uk-card-body">
-                    <h3 class="uk-card-title">Secondary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-secondary uk-flex-wrap uk-card-body">
-                    <h3 class="uk-card-title">Secondary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-secondary uk-flex-wrap uk-card-body">
-                <h3 class="uk-card-title">Secondary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            
         </div>
         <!-- End of Favorites -->   
         
         <footer>If you are out experiencing the world of beer and need a ride home let us recommend a friend click the button to get a ride home  <button class="uk-button uk-button-primary uk-button-small">Lyft</button>
         </footer>
     
-    
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/favorites.js"></script>
     </body>
 </html>

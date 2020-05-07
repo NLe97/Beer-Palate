@@ -1,7 +1,30 @@
 $(document).ready(function () {
   $(".ageCheck").on("click", function () {
-    console.log("test click");
+    var ageInput = $('.ageInput');
+    var day = ageInput.val().split('/')[1];
+    var month = ageInput.val().split('/')[0];
+    var year = ageInput.val().split('/')[2];
+    /*
+      We're going to collect and parse the values from the input in the format mm/dd/yy, with this:
+      var day = agentInput.val().split('/')[1];
+      Then, we're going to check if the current year minus the year of the given input is greater than 21:
+      current Year -> new Date().getFullYear()
+      input Year -> new Date(Date.parse(`${month}-${day}-${year}`)).getFullYear()
+    */
+    console.log(new Date().getFullYear);
+    console.log(new Date(Date.parse(`${month}-${day}-${year}`)).getFullYear());
+    console.log(new Date().getFullYear() - new Date(Date.parse(`${month}-${day}-${year}`)).getFullYear());
+    
+    var appropriateAge = new Date().getFullYear() - new Date(Date.parse(`${month}-${day}-${year}`)).getFullYear() >= 21;
+    localStorage.setItem('authorized', appropriateAge ? true : false);
+    if(appropriateAge) {
+      window.location.href = "/Homepage.html";
+    } else {
+      window.location.href = "https://disney.com";
+    }
   });
+
+
 });
 
 //Things to do -

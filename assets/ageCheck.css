@@ -1,6 +1,6 @@
 html {
   background: url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)
-    no-repeat center center fixed;
+   no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,6 +9,17 @@ html {
 
 .age-ver {
   padding: 15%;
+  text-align: center;
+}
+
+#infopanel {
+  background-color: darkgray;
+  width: 70%;
+  height: 60%;
+  padding-top: 50px;
+}
+
+.container {
   text-align: center;
 }
 
@@ -21,7 +32,7 @@ html {
 }
 
 .uk-modal-dialog {
-  background: #222222;
+  background: darkgray;
   color: white;
 }
 

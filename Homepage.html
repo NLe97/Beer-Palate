@@ -17,23 +17,15 @@
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left uk-background-muted">
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active uk-text-muted"><a href="#">Beer Palate</a></li>
+                    <li class="uk-active uk-text-muted"><a href="/index.html">Beer Palate</a></li>
                 </ul>
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li class="nav-home"><a href="#">Home</a></li>
+                    <li class="nav-home"><a href="/Homepage.html">Home</a></li>
                     <li>
-                        <a href="#">Favorite</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Item</a></li>
+                        <a href="/favorites.html">Favorite</a>                       
+                    </li>                
                 </ul>    
             </div> 
         </nav>
@@ -75,7 +67,7 @@
     
     <!--Start of Cards-->
     <div class="my-container">
-        <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+        <div class="uk-child-width-1-3@s uk-grid-match beer-card" uk-grid>
             <div class= "card-image">
                 <div class="uk-card uk-card-secondary uk-card-hover uk-card-body cardpic">
                     <h3 class="uk-card-title">Picture</h3>
@@ -95,6 +87,7 @@
                 <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
                     <h3 class="uk-card-title">Food to Eat With</h3>
                     <p class="beer-pairing">Food Pairing:</p>
+                    <button class="uk-button uk-button-default btn-favorite">Favorite</button>
                 </div>
             </div>
         </div>
@@ -112,7 +105,10 @@
     </div>
   </footer>   
 <!--Footer ends-->
-
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 <!--Link my JS-->
 <script src="assets/homepagescript.js"></script>
 <!-- UIkit JS -->

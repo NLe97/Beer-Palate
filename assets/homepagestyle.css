@@ -33,6 +33,10 @@
     
 }
 
+.card-image img {
+    height: 200px;
+}
+
 footer {
     text-align: center;
     background-color: lightgray;
