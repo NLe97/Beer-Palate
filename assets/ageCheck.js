@@ -20,7 +20,7 @@ $(document).ready(function () {
     if(appropriateAge) {
       window.location.href = "/Homepage.html";
     } else {
-      window.location.href = "https://disney.com";
+      window.location.href = "https://www.nick.com/shows/spongebob-squarepants";
     }
   });
 
