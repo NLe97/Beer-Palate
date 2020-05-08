@@ -52,4 +52,18 @@ $(document).ready(function() {
       })
   })
 
+  //lyft button logic
+  // goes to lyft rider page
+
+  $("#Lyft").click(function(){
+
+    function newTab() {
+
+      window.open("https://www.lyft.com/rider")
+
+    }
+      newTab();
+  })
+  //end lyft button logic
+
 });
