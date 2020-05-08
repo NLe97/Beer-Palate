@@ -58,4 +58,16 @@ footer {
     color: whitesmoke;
     background-color: rgb(255, 0, 191);
 }
-/* https://www.lyft.com/rider */
+
+#beerBtn {
+    background-color: lightgray;
+}
+
+#navBar {
+
+   background-color: lightgray;
+}
+
+#beerPalateBlock {
+    background-color: lightgray;
+}
