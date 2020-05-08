@@ -6,6 +6,16 @@ html {
     background-color: lightgray;
 }
 
+#navBar {
+
+   background-color: lightgray;
+}
+
+#beerPalateBlock {
+    background-color: lightgray;
+}
+
+
 .container-Navbar {
     font-size: 40pt;
 }
@@ -31,6 +41,7 @@ html {
 
 .my-searchbar {
      margin-top: 10px;
+     
 }
 
 .my-container {
