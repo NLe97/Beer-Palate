@@ -71,3 +71,14 @@ footer {
 #beerPalateBlock {
     background-color: lightgray;
 }
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0;
+    
+}

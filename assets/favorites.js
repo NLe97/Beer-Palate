@@ -20,7 +20,7 @@ $(document).ready(function() {
   cardContainer.html('');
 
   function createBeerCard(beer) {
-    var card = beerCard.clone();
+    var card = beerCard.clone().sortable();
     card.css('display', 'flex');
     card.find('.beer-name').html(beer.name);
     card.find('.card-image img').attr('src', beer.image_url);
