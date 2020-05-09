@@ -18,7 +18,7 @@ $(document).ready(function () {
     var appropriateAge = new Date().getFullYear() - new Date(Date.parse(`${month}-${day}-${year}`)).getFullYear() >= 21;
     localStorage.setItem('authorized', appropriateAge ? true : false);
     if(appropriateAge) {
-      window.location.href = "/Homepage.html";
+      window.location.href = "/Beer-Palate---Project-1/Homepage.html";
     } else {
       window.location.href = "https://www.nick.com/shows/spongebob-squarepants";
     }
