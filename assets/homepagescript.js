@@ -30,7 +30,7 @@ $(document).ready(function () {
 
       // something to create my beer card
     function createBeerCard(beer) {
-      var card = beerCard.clone().sortable(); // clone() copies the beerCard element, because our search could bring up multiple beers not just one card
+      var card = beerCard.clone().sortable().disableSelection(); // clone() copies the beerCard element, because our search could bring up multiple beers not just one card
       card.css('display', 'flex'); // the card will not display upon being searched with css("display", "flex")
       card.find('.beer-name').html(beer.name); // jquery method, find element class where beer name will go and replace the html with beer name pull from api
       card.find('.card-image img').attr('src', beer.image_url); // add image attr to image card
