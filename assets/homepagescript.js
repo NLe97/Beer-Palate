@@ -54,7 +54,7 @@ $(document).ready(function () {
       return card;
     }
     
-    // something to search 
+    // something to search the beer 
     function searchBrews(brewName) {
       var cardContainer = $('.my-container');
       cardContainer.html('');

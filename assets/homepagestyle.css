@@ -48,7 +48,7 @@ html {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 300px;
+    margin-bottom: 665px;
     
 }
 
@@ -58,15 +58,20 @@ html {
 
 footer {
     text-align: center;
-    background-color: lightgray;
+    background-color: darkgray;
     position: relative;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     bottom: 0;
+    color: black;
     
 }
 
 h2 {
+    color: black;
+}
+
+.authors {
     color: black;
 }
