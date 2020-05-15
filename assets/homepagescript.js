@@ -36,7 +36,7 @@ $(document).ready(function () {
       card.find('.card-image img').attr('src', beer.image_url); // add image attr to image card
       // following lines are basically using find method to find class added on to the elements of the cards, we're appending the data as a blank, pulling from the specified object and properties from the api
       card.find('.beer-info').append(" " + beer.description); 
-      card.find('.beer-hop').append(" " + beer.ingredients.hops.map(h => h.name).join(', '));
+      card.find('.beer-hop').append(" " + beer.ingredients.hops.map(h => h.name).join(', ')); // map method creates new array, adding to the each index 
       card.find('.beer-ingredients').append(" " + beer.ingredients.malt.map(h => h.name).join(', '));
       card.find('.beer-tips').append(" " + beer.brewers_tips);
       card.find('.beer-pairing').append(" <br/>" + beer.food_pairing.join('<br />'));
@@ -59,7 +59,7 @@ $(document).ready(function () {
       var cardContainer = $('.my-container');
       cardContainer.html('');
 
-      fetchBrew(brewName).then(beers => { // this is an arrow function (modern syntax declare functions)
+      fetchBrew(brewName).then(beers => { // this is an arrow function (ES6)
         beers.forEach(beer => {
           var card = createBeerCard(beer);
           cardContainer.append(card);
