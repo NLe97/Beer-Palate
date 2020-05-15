@@ -18,7 +18,7 @@ $(document).ready(function () {
       }).then(function(response) {
          console.log(response)
       });
-    }
+    
     
     var userInput = response
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
     function createBeerCard(beer) {
       var card = beerCard.clone().sortable().disableSelection(); // clone() copies the beerCard element, because our search could bring up multiple beers not just one card
       card.css('display', 'flex'); // the card will not display upon being searched with css("display", "flex")
-      card.find('.beer-name').userInput(beer.name); // jquery method, find element class where beer name will go and replace the html with beer name pull from api
+      card.find('.beer-name').html(beer.name); // jquery method, find element class where beer name will go and replace the html with beer name pull from api
       card.find('.card-image img').attr('src', beer.image_url); // add image attr to image card
       // following lines are basically using find method to find class added on to the elements of the cards, we're appending the data as a blank, pulling from the specified object and properties from the api
       card.find('.beer-info').append(" " + beer.description); 
@@ -61,7 +61,7 @@ $(document).ready(function () {
     // something to search the beer 
     function searchBrews(brewName) {
       var cardContainer = $('.my-container');
-      cardContainer.userInput('');
+      cardContainer.html('');
 
       fetchBrew(brewName).then(beers => { // this is an arrow function (modern syntax declare functions)
         beers.forEach(beer => {
@@ -70,7 +70,6 @@ $(document).ready(function () {
         })
       });
 
-      
     }
-
+  }
   });
