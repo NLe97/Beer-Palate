@@ -22,9 +22,8 @@ $(document).ready(function () {
     var searchBar = $('.my-searchbar input'); // var to target input element of my-searchbar
     // Event handler 
     $(form).submit(function (e) { // the on submit event listener for form element 
-      e.preventDefault(); // need this to prevent default because we dont want submission without input
-      var brewName = searchBar.val(); // var of the brewName (name of beer we search for to be) in the searchBar to be set to method val() of empty, because taking into account user input
-      // call functions searchBrews passing var BrewName in it, because we're taking what the user is input and passing that in the searchbrew function
+      e.preventDefault(); 
+      var brewName = searchBar.val();
       searchBrews(brewName);
     });
 
@@ -65,8 +64,5 @@ $(document).ready(function () {
           cardContainer.append(card);
         })
       });
-
-      
     }
-
   });
