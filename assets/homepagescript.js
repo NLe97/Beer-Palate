@@ -15,13 +15,9 @@ $(document).ready(function () {
       return $.ajax({
         url: queryURL,
         method: "GET", // GET, POST, UPDATE, DELETE –– HTTP METHODS
-      }).then(function(response) {
-         console.log(response)
       });
+    }
     
-    
-    var userInput = response
-
     var form = $('.my-searchbar form'); // var to target search bar element form
     var searchBar = $('.my-searchbar input'); // var to target input element of my-searchbar
     // Event handler 
@@ -70,6 +66,7 @@ $(document).ready(function () {
         })
       });
 
+      
     }
-  }
+
   });
