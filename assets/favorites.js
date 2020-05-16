@@ -7,7 +7,7 @@ $(document).ready(function() {
     beerCard.css('display', 'none');
     
     function fetchBrewByIds(brew_ids) {
-    var queryURL = "https:api.punkapi.com/v2/beers?ids=" + brew_ids.join('|');
+    var queryURL = "https://api.punkapi.com/v2/beers?ids=" + brew_ids.join('|');
 
     return $.ajax({
       url: queryURL,
