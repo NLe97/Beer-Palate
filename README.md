@@ -1,5 +1,5 @@
 # Beer-Palate---Project-1 
-Beer Consumer report and Plus What to Eat with Your Beer
+Beer Consumer report and Plus What to Eat with Your Beer. 
 ## User Story
 ```
 As a beer consumer/customer who wants to learn more about what goes in it,
@@ -22,24 +22,5 @@ Then I can favorite it and it is saved in the favorites page as cards also
 When I am in the favorited page 
 Then I can remove or review the beer cards that I have previously favorited.
 ```
-
-## How to Run if opened on VSCode
-```
-Install the Live Code extension on VSCode
-Bottom right corner on screen make sure to press go live in the index.html first(order of pages)
-```
-
-## How to run the server:
-```
-How to run this project on a local web server:
-
-Install `serve` package with npm:
-```npm install -g serve```
-
-Open Terminal and then open the project folder:
-```cd /Users/ben/Desktop/Beer-Palate---Project-1```
-
-Then, run the server on the project folder:
-```serve .```
-
-The server will probably be up on `http://localhost:5000`
+## Demo Here
+https://nle97.github.io/Beer-Palate-/index.html
