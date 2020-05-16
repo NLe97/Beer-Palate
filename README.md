@@ -23,4 +23,4 @@ When I am in the favorited page
 Then I can remove or review the beer cards that I have previously favorited.
 ```
 ## Demo Here
-https://nle97.github.io/Beer-Palate-/index.html
+https://nle97.github.io/Beer-Palate/index.html
