@@ -10,7 +10,7 @@ $(document).ready(function () {
     beerCard.css('display', 'none');
 
     function fetchBrew(brew) {
-      var queryURL = "https:api.punkapi.com/v2/beers?beer_name=" + brew;
+      var queryURL = "https://api.punkapi.com/v2/beers?beer_name=" + brew;
 
       return $.ajax({
         url: queryURL,
